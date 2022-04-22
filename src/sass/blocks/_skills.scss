@@ -1,0 +1,38 @@
+.skills {
+    &__title {
+        text-align: center;
+        @include before_circle2;
+        &:before {
+            left: 50%;
+            transform: translateX(-50%)
+        }
+    }
+    &__subtitle {
+        text-align: center;
+    }
+    &__wrapper {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(4, 270px);
+        grid-template-rows: repeat(2, 270px);
+        gap: 13px;
+        justify-content: center;
+    }
+    &__item {
+        padding: 30px 30px 25px 30px;
+        border: 1px solid #000;
+        &-img {
+            display: flex;
+            align-items: center;
+            height: 65px;
+        }
+        &-title {
+            margin-top: 20px;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        &-descr {
+            font-size: 12px;
+        }
+    }
+}

@@ -51,3 +51,22 @@
         transition-delay: 0.5s;
     }
 }
+
+@mixin before_circle2 {
+    position: relative;
+    transition: all 0.5s ease;
+    box-sizing: border-box;
+    &:before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: -26%;
+        left: 0;
+        width: 36px;
+        height: 36px;
+        border-radius: 100%;
+        // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        background: $main-color;
+        opacity: 0.6;
+    }
+}

@@ -1,0 +1,34 @@
+.level {
+
+    &__wrapper {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(3, 350px);
+        grid-template-rows: repeat(2, 70px);
+        gap: 45px;
+    }
+    &__item {
+        &-header {
+            padding: 8px 0 27px 14px;
+            display: flex;
+            justify-content: space-between;
+        }
+        &-title {
+            font-weight: 700;
+            @include before_circle2;
+            &:before {
+                top: -6px;
+                left: -12px;
+            }
+        }
+        &-bar {
+            height: 14px;
+            width: 100%;
+            background-color: $main-color;
+            &-fill {
+                background-color: #000;
+                height: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,99 @@
+.resume {
+    &__title {
+        text-align: center;
+        @include before_circle2;
+        &:before {
+            left: 50%;
+            transform: translateX(-50%)
+        }
+    }
+    &__subtitle {
+        text-align: center;
+    }
+    &__wrapper {
+        padding-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(2, 425px);
+        justify-content: space-around;
+    }
+    &__column {
+        &-title {
+            position: relative;
+            padding-left: 35px;
+            &:before {
+                content:'';
+                position: absolute;
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                left: -13px;
+                top: 50%;
+                background: $main-color;
+                transform: translateY(-50%);
+            }
+        }
+        ul {
+            list-style-type: none;
+            li {
+                position: relative;
+                &::after {
+                    content: '';
+                    width: 1px;
+                    height: calc(100% + 20px);
+                    position: absolute;
+                    top: -23px;
+                    left: -6px;
+                    background-color: #000;
+                }
+            }
+        }
+    }
+    &__item {
+        position: relative;
+        &::before {
+            content: '';
+            height: 1px;
+            width: 46px;
+            position: absolute;
+            background: #000;
+            top: 63px;
+            left: -6px;
+        }
+        &-head {
+            position: relative;
+            padding: 45px 0 0 100px;
+        }
+        &-body {
+            padding-left: 43px;
+            margin-top: 12px;
+            font-size: 12px;
+        }
+        &-icon {
+            position: absolute;
+            top: 0;
+            left: -60px;
+            @include before_circle2;
+            img {
+                position: absolute;
+                left: 17px;
+                top: 14px;
+            }
+        }
+        &-location {
+            font-size: 12px;
+        }
+    }
+}
+
+#icon2 {
+    top: 16px;
+    left: 15px;
+}
+#icon3 {
+    top: 14px;
+    left: 17px;
+}
+#icon4{
+    top: 15px;
+    left: 13px;
+}

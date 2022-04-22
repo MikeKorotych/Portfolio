@@ -7,6 +7,34 @@
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
+    transition: all 0.6s ease;
+}
+
+h1, h2, h3, h4 {
+    margin-bottom: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.fullscreen {
+    height: 100%;
+    // scroll-snap-type: y mandatory;
+    // overflow-y: scroll;
+    // overflow-x: hidden;
+    section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        // scroll-snap-align: start;
+    }
 }
 
 .container {
@@ -14,12 +42,14 @@
     margin: 0 auto;
 }
 
-// .divider {
-//     width: 60px;
-//     height: 3px;
-//     background-color: $main-color;
-//     margin-top: 25px;
-// }
+
+.divider {
+    width: 60px;
+    height: 3px;
+    background-color: $main-color;
+    margin: 25px auto 0 auto;
+    border-radius: 3px;
+}
 
 @import 'blocks/promo';
 @import 'blocks/title';
@@ -27,3 +57,8 @@
 @import 'blocks/sidepanel';
 @import 'blocks/menu';
 @import 'blocks/about';
+@import 'blocks/resume';
+@import 'blocks/skills';
+@import 'blocks/level';
+@import 'blocks/portfolio';
+@import 'blocks/contacts';
