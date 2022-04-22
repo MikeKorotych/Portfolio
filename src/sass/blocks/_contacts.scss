@@ -16,7 +16,7 @@
     }
     &__descr {
         .divider {
-            margin: 8px 0 0 0;
+            margin: 6px 0 0 0;
         }
         .footer {
             margin-top: 5px;
@@ -24,7 +24,7 @@
         }
     }
     &__text, &__social {
-        margin-top: 23px;
+        margin-top: 21px;
     }
     &__link {
         margin-right: 25px;
@@ -51,7 +51,7 @@
         display: grid;
         grid-template: 45px 190px 45px / repeat(2, 280px);
         justify-content: space-between;
-        row-gap: 30px;
+        row-gap: 33px;
     }
     &__input {
         position: relative;

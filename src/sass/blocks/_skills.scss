@@ -21,6 +21,9 @@
     &__item {
         padding: 30px 30px 25px 30px;
         border: 1px solid #000;
+        &:hover {
+            transform: scale(1.05);
+        }
         &-img {
             display: flex;
             align-items: center;
