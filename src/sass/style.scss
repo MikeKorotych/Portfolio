@@ -24,16 +24,16 @@ body {
 
 .fullscreen {
     height: 100%;
-    // scroll-snap-type: y mandatory;
-    // overflow-y: scroll;
-    // overflow-x: hidden;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    overflow-x: hidden;
     section {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100vw;
         height: 100vh;
-        // scroll-snap-align: start;
+        scroll-snap-align: start;
     }
 }
 
