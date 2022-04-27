@@ -10,13 +10,15 @@
     .container_promo {
         margin-top: -6%;
     }
+    
     &__me {
         display: block;
         position: absolute;
         bottom: 0;
         right: 0;
-        height: 100%;
-        width: auto;
+        height: 100vh;
+        // width: 100%;
+        object-fit: contain;
     }
     &__title {
         width: 535px;
@@ -57,14 +59,16 @@
         background-position: 100% 50%;
         }
         100% {
-    background-position: 0 50%;
+        background-position: 0 50%;
         }
     }
+
     .type1 {
         position: relative;
         border: none;
         background-color: transparent;
         outline: none;
+        z-index: 3;
         &::after, &::before {
             content: '';
             display: block;
@@ -93,6 +97,7 @@
         }
         &:hover::after,
         &:hover::before {
+            cursor: pointer;
             width: 105%;
             height: 110%;
         }
